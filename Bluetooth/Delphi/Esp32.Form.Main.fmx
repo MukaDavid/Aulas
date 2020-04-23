@@ -1,0 +1,99 @@
+object Form1: TForm1
+  Left = 0
+  Top = 0
+  Caption = 'Form1'
+  ClientHeight = 480
+  ClientWidth = 317
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  DesignerMasterStyle = 3
+  object Layout1: TLayout
+    Align = Top
+    Size.Width = 317.000000000000000000
+    Size.Height = 41.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 1
+  end
+  object Layout3D1: TLayout3D
+    Height = 4.000000000000000000
+    Width = 5.000000000000000000
+  end
+  object Layout2: TLayout
+    Align = Top
+    Position.Y = 41.000000000000000000
+    Size.Width = 317.000000000000000000
+    Size.Height = 50.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 3
+    object btnListarDispositivos: TButton
+      Align = Right
+      Margins.Left = 5.000000000000000000
+      Margins.Top = 5.000000000000000000
+      Margins.Right = 5.000000000000000000
+      Margins.Bottom = 5.000000000000000000
+      Position.X = 152.000000000000000000
+      Position.Y = 5.000000000000000000
+      Size.Width = 160.000000000000000000
+      Size.Height = 40.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 0
+      Text = 'Listar Dispositivos'
+      OnClick = btnListarDispositivosClick
+    end
+    object cbxDispositivos: TComboBox
+      Align = Client
+      Margins.Top = 10.000000000000000000
+      Size.Width = 147.000000000000000000
+      Size.Height = 32.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 1
+    end
+  end
+  object Layout3: TLayout
+    Align = Top
+    Position.Y = 91.000000000000000000
+    Size.Width = 317.000000000000000000
+    Size.Height = 50.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 4
+    object btnConectar: TButton
+      Align = Left
+      Margins.Left = 5.000000000000000000
+      Margins.Top = 5.000000000000000000
+      Margins.Right = 5.000000000000000000
+      Margins.Bottom = 5.000000000000000000
+      Position.X = 5.000000000000000000
+      Position.Y = 5.000000000000000000
+      Size.Width = 108.000000000000000000
+      Size.Height = 40.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 0
+      Text = 'Conectar'
+      OnClick = btnConectarClick
+    end
+    object lblStatus: TLabel
+      Align = Left
+      Position.X = 118.000000000000000000
+      Size.Width = 123.000000000000000000
+      Size.Height = 50.000000000000000000
+      Size.PlatformDefault = False
+      Text = 'Desconectado'
+      TabOrder = 1
+    end
+    object Switch1: TSwitch
+      Align = Right
+      IsChecked = False
+      Margins.Right = 5.000000000000000000
+      Position.X = 268.000000000000000000
+      Position.Y = 12.000000000000000000
+      TabOrder = 2
+      OnSwitch = Switch1Switch
+    end
+  end
+  object Bluetooth1: TBluetooth
+    Enabled = True
+    Left = 112
+    Top = 184
+  end
+end
